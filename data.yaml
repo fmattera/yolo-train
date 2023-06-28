@@ -4,10 +4,3 @@ test: /home/f_mattera_it/yolo-train/test/images
 
 nc: 3
 names: ['cupboard','lamp','shelf']
-
-roboflow:
-  workspace: lee-rcm5o
-  project: cabinet_only-mmex4
-  version: 2
-  license: CC BY 4.0
-  url: https://universe.roboflow.com/lee-rcm5o/cabinet_only-mmex4/dataset/2
