@@ -1,9 +1,9 @@
-train: ../train/images
-val: ../valid/images
-test: ../test/images
+train: /home/f_mattera_it/yolo-train/train/images
+val: /home/f_mattera_it/yolo-train/valid/images
+test: /home/f_mattera_it/yolo-train/test/images
 
 nc: 3
-names: ['cabinet','shelf','lamp']
+names: ['cupboard','lamp','shelf']
 
 roboflow:
   workspace: lee-rcm5o
