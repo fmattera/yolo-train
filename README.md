@@ -10,7 +10,7 @@
 
 ## Example of working data.yaml
 
-You can find the best model so far in runs/detect/train16
+You can find the best model so far in runs/detect/train17
 
 train: /home/f_mattera_it/yolo-train/train/images
 val: /home/f_mattera_it/yolo-train/valid/images
