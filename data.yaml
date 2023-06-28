@@ -2,5 +2,5 @@ train: /home/f_mattera_it/yolo-train/train/images
 val: /home/f_mattera_it/yolo-train/valid/images
 test: /home/f_mattera_it/yolo-train/test/images
 
-nc: 3
+nc: 82
 names: ['cupboard','lamp','shelf']
