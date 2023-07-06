@@ -2,9 +2,9 @@ import os
 
 # Set the path to the folder containing the .txt files
 folder_paths = [
-r'C:\Users\Shadow\Documents\NeoLocus\11_04_23_backup\DATASETS\shelf.v2-shelfv5.yolov8\test\labels',
-r'C:\Users\Shadow\Documents\NeoLocus\11_04_23_backup\DATASETS\shelf.v2-shelfv5.yolov8\train\labels',
-r'C:\Users\Shadow\Documents\NeoLocus\11_04_23_backup\DATASETS\shelf.v2-shelfv5.yolov8\valid\labels',]
+r'C:\Users\Shadow\Documents\NeoLocus\11_04_23_backup\yolo-train\test\labels',
+r'C:\Users\Shadow\Documents\NeoLocus\11_04_23_backup\yolo-train\train\labels',
+r'C:\Users\Shadow\Documents\NeoLocus\11_04_23_backup\yolo-train\valid\labels',]
 
 
 
@@ -26,7 +26,7 @@ for folder_path in folder_paths:
         modified_lines = []
         for line in lines:
             parts = line.strip().split(' ')
-            parts[0] = str(int(parts[0]) + 82)  # Modify the first element
+            parts[0] = str(int(parts[0]) + 80)  # Modify the first element
             
             modified_line = ' '.join(parts) + '\n'
             modified_lines.append(modified_line)

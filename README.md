@@ -33,7 +33,7 @@ names: ['person', 'bicycle', 'car', 'motorcycle', 'airplane', 'bus', 'train', 't
 
 from a pretrained model having the 79 classes:
 
-yolo task=detect mode=train model=yolov8m.pt data=data.yaml epochs=100 imgsz=640
+yolo task=detect mode=train model=yolov8m.pt data=data.yaml epochs=150 imgsz=640
 
 model can be [yolov8n.pt, yolov8s.pt, yolov8m.pt, yolov8l.pt, yolov8x.pt]
 
