@@ -33,7 +33,7 @@ names: ['person', 'bicycle', 'car', 'motorcycle', 'airplane', 'bus', 'train', 't
 
 from a pretrained model having the 79 classes:
 
-yolo task=detect mode=train model=yolov8m.pt data=data.yaml epochs=150 imgsz=640
+yolo task=detect mode=train model=yolov8l.pt data=data.yaml epochs=180 imgsz=640 workers=1 batch=10
 
 model can be [yolov8n.pt, yolov8s.pt, yolov8m.pt, yolov8l.pt, yolov8x.pt]
 
@@ -43,3 +43,6 @@ model can be [yolov8n.pt, yolov8s.pt, yolov8m.pt, yolov8l.pt, yolov8x.pt]
 yolo task=detect mode=train model=yolov8m.yaml data=data.yaml epochs=100 imgsz=640
 
 model can be [yolov8n.yaml, yolov8s.yaml, yolov8m.yaml, yolov8l.yaml, yolov8x.yaml]
+
+
+yolo predict model=runs\detect\train6\weights\best.pt source=C:\Users\Shadow\Documents\NeoLocus\11_04_23_backup\yolo-train\test\images
