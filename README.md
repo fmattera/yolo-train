@@ -10,23 +10,7 @@
 
 ## Example of working data.yaml
 
-You can find the best model so far in runs/detect/train17
-
-train: /home/f_mattera_it/yolo-train/train/images
-val: /home/f_mattera_it/yolo-train/valid/images
-test: /home/f_mattera_it/yolo-train/test/images
-
-nc: 82
-
-names: ['person', 'bicycle', 'car', 'motorcycle', 'airplane', 'bus', 'train', 'truck', 'boat', 'traffic light',
-        'fire hydrant', 'stop sign', 'parking meter', 'bench', 'bird', 'cat', 'dog', 'horse', 'sheep', 'cow',
-        'elephant', 'bear', 'zebra', 'giraffe', 'backpack', 'umbrella', 'handbag', 'tie', 'suitcase', 'frisbee',
-        'skis', 'snowboard', 'sports ball', 'kite', 'baseball bat', 'baseball glove', 'skateboard', 'surfboard',
-        'tennis racket', 'bottle', 'wine glass', 'cup', 'fork', 'knife', 'spoon', 'bowl', 'banana', 'apple',
-        'sandwich', 'orange', 'broccoli', 'carrot', 'hot dog', 'pizza', 'donut', 'cake', 'chair', 'couch',
-        'potted plant', 'bed', 'dining table', 'toilet', 'tv', 'laptop', 'mouse', 'remote', 'keyboard', 'cell phone',
-        'microwave', 'oven', 'toaster', 'sink', 'refrigerator', 'book', 'clock', 'vase', 'scissors', 'teddy bear',
-        'hair drier', 'toothbrush', 'cabinet','lamp','shelf']
+You can find the best model so far in runs/detect/train6
 
 
 ## Fine tuning YOLO 
@@ -44,5 +28,5 @@ yolo task=detect mode=train model=yolov8m.yaml data=data.yaml epochs=100 imgsz=6
 
 model can be [yolov8n.yaml, yolov8s.yaml, yolov8m.yaml, yolov8l.yaml, yolov8x.yaml]
 
-
+## Predict on the test set data
 yolo predict model=runs\detect\train6\weights\best.pt source=C:\Users\Shadow\Documents\NeoLocus\11_04_23_backup\yolo-train\test\images
